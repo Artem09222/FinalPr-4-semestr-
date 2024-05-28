@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal()">&times;</span>
+        </div>
+      </div>
+
+    <!-- header of section -->
+    <header class="headerPage">
+        <div class="wrapper">
+            <section class="firstSection">
+                <p class="firstSectionInfo">ЗНАЙДІТЬ КРАЩІ ПОДІЇ <br> ПО ВСЬОМУ СВІТУ</p>
+                <div class="countrySearch">
+                    <div class="firstSectionSearch">
+                        <label><input class="firstSectionInput" type="text" placeholder="Почніть пошук"></label>
+                        <img src="./Icons/Vector.png" alt="" class="firstSectionIcon">
+                    </div>
+                    <div class="select-wrapper">
+                        <select id="country-select" class="headSelect">
+                          <option value="" disabled selected>Choose country ∇</option>
+                        </select>
+                      </div>
+                      <!-- <form class="search-input">
+                        <label class="" for="search">Search by first letter:
+                          <input type="text" class="search" oninput="searchEvents()" />
+                          <img class="search-img" src="images/Vector (1).png" alt="" />
+                        </label>
+                      </form> -->
+        </div>
+    </header>
+    <div class="filmsContent"></div>
+
+    <!-- main of sections -->
+    <main class="mainSections">
+        <section class="secondSection">
+            <div class="cards">
+                <div class="card">
+                    <img src="./Images/Rectangle 6 (1).png" alt="" class="cardImg">
+                    <p class="cardTitle">Фінал Євробачення 2021!</p>
+                    <p class="cardMiniTitle">2021-05-13</p>
+                    <div class="iconWithCardText">
+                        <img src="./Icons/Vector (1).png" alt="" class="cardIcon">
+                        <p class="cardText">Палац Україна</p>
+                    </div>
+                </div>
+                <div class="card hidden">
+                    <img src="./Images/Rectangle 6 (5).png" alt="" class="cardImg">
+                    <p class="cardTitle">Atlas Weekend</p>
+                    <p class="cardMiniTitle">2021-06-09</p>
+                    <div class="iconWithCardText">
+                        <img src="./Icons/Vector (1).png" alt="" class="cardIcon">
+                        <p class="cardText">VDNH</p>
+                    </div>
+                </div>
+                <div class="card hidden">
+                    <img src="./Images/Rectangle 6 (3).png" alt="" class="cardImg">
+                    <p class="cardTitle">LP</p>
+                    <p class="cardMiniTitle">2021-07-27</p>
+                    <div class="iconWithCardText">
+                        <img src="./Icons/Vector (1).png" alt="" class="cardIcon">
+                        <p class="cardText">Палац Україна</p>
+                    </div>
+                </div>
+                <div class="card hidden">
+                    <img src="./Images/Rectangle 6 (4).png" alt="" class="cardImg">
+                    <p class="cardTitle">MONATIK</p>
+                    <p class="cardMiniTitle">2021-07-17</p>
+                    <div class="iconWithCardText">
+                        <img src="./Icons/Vector (1).png" alt="" class="cardIcon">
+                        <p class="cardText">VDNH</p>
+                    </div>
+                </div>
+                <div class="card hidden">
+                    <img src="./Images/Rectangle 6 (4).png" alt="" class="cardImg">
+                    <p class="cardTitle">MONATIK</p>
+                    <p class="cardMiniTitle">2021-07-17</p>
+                    <div class="iconWithCardText">
+                        <img src="./Icons/Vector (1).png" alt="" class="cardIcon">
+                        <p class="cardText">VDNH</p>
+                    </div>
+                </div>
+                <div class="card hidden">
+                    <img src="./Images/Rectangle 6 (3).png" alt="" class="cardImg">
+                    <p class="cardTitle">LP</p>
+                    <p class="cardMiniTitle">2021-07-27</p>
+                    <div class="iconWithCardText">
+                        <img src="./Icons/Vector (1).png" alt="" class="cardIcon">
+                        <p class="cardText">Палац Україна</p>
+                    </div>
+                </div>
+                <div class="card hidden">
+                    <img src="./Images/Rectangle 6 (5).png" alt="" class="cardImg">
+                    <p class="cardTitle">Atlas Weekend</p>
+                    <p class="cardMiniTitle">2021-06-09</p>
+                    <div class="iconWithCardText">
+                        <img src="./Icons/Vector (1).png" alt="" class="cardIcon">
+                        <p class="cardText">VDNH</p>
+                    </div>
+                </div>
+                <div class="card hidden">
+                    <img src="./Images/Rectangle 6 (1).png" alt="" class="cardImg">
+                    <p class="cardTitle">Фінал Євробачення 2021!</p>
+                    <p class="cardMiniTitle">2021-05-13</p>
+                    <div class="iconWithCardText">
+                        <img src="./Icons/Vector (1).png" alt="" class="cardIcon">
+                        <p class="cardText">Палац Україна</p>
+                    </div>
+                </div> 
+                <div class="card hidden">
+                    <img src="./Images/Rectangle 6 (5).png" alt="" class="cardImg">
+                    <p class="cardTitle">Atlas Weekend</p>
+                    <p class="cardMiniTitle">2021-06-09</p>
+                    <div class="iconWithCardText">
+                        <img src="./Icons/Vector (1).png" alt="" class="cardIcon">
+                        <p class="cardText">VDNH</p>
+                    </div>
+                </div>
+                <div class="card hidden">
+                    <img src="./Images/Rectangle 6 (1).png" alt="" class="cardImg">
+                    <p class="cardTitle">Фінал Євробачення 2021!</p>
+                    <p class="cardMiniTitle">2021-05-13</p>
+                    <div class="iconWithCardText">
+                        <img src="./Icons/Vector (1).png" alt="" class="cardIcon">
+                        <p class="cardText">Палац Україна</p>
+                    </div>
+                </div>
+                <div class="card hidden">
+                    <img src="./Images/Rectangle 6 (4).png" alt="" class="cardImg">
+                    <p class="cardTitle">MONATIK</p>
+                    <p class="cardMiniTitle">2021-07-17</p>
+                    <div class="iconWithCardText">
+                        <img src="./Icons/Vector (1).png" alt="" class="cardIcon">
+                        <p class="cardText">VDNH</p>
+                    </div>
+                </div>
+                <div class="card hidden">
+                    <img src="./Images/Rectangle 6 (3).png" alt="" class="cardImg">
+                    <p class="cardTitle">LP</p>
+                    <p class="cardMiniTitle">2021-07-27</p>
+                    <div class="iconWithCardText">
+                        <img src="./Icons/Vector (1).png" alt="" class="cardIcon">
+                        <p class="cardText">Палац Україна</p>
+                    </div>
+                </div>           
+                <div class="card hidden">
+                    <img src="./Images/Rectangle 6 (1).png" alt="" class="cardImg">
+                    <p class="cardTitle">Фінал Євробачення 2021!</p>
+                    <p class="cardMiniTitle">2021-05-13</p>
+                    <div class="iconWithCardText">
+                        <img src="./Icons/Vector (1).png" alt="" class="cardIcon">
+                        <p class="cardText">Палац Україна</p>
+                    </div>
+                </div>
+                <div class="card hidden">
+                    <img src="./Images/Rectangle 6 (4).png" alt="" class="cardImg">
+                    <p class="cardTitle">MONATIK</p>
+                    <p class="cardMiniTitle">2021-07-17</p>
+                    <div class="iconWithCardText">
+                        <img src="./Icons/Vector (1).png" alt="" class="cardIcon">
+                        <p class="cardText">VDNH</p>
+                    </div>
+                </div>
+                <div class="card hidden">
+                    <img src="./Images/Rectangle 6 (3).png" alt="" class="cardImg">
+                    <p class="cardTitle">LP</p>
+                    <p class="cardMiniTitle">2021-07-27</p>
+                    <div class="iconWithCardText">
+                        <img src="./Icons/Vector (1).png" alt="" class="cardIcon">
+                        <p class="cardText">Палац Україна</p>
+                    </div>
+                </div>   
+                <div class="card hidden">
+                    <img src="./Images/Rectangle 6 (5).png" alt="" class="cardImg">
+                    <p class="cardTitle">Atlas Weekend</p>
+                    <p class="cardMiniTitle">2021-06-09</p>
+                    <div class="iconWithCardText">
+                        <img src="./Icons/Vector (1).png" alt="" class="cardIcon">
+                        <p class="cardText">VDNH</p>
+                    </div>
+                </div>
+                <div class="card hidden">
+                    <img src="./Images/Rectangle 6 (3).png" alt="" class="cardImg">
+                    <p class="cardTitle">LP</p>
+                    <p class="cardMiniTitle">2021-07-27</p>
+                    <div class="iconWithCardText">
+                        <img src="./Icons/Vector (1).png" alt="" class="cardIcon">
+                        <p class="cardText">Палац Україна</p>
+                    </div>
+                </div>   
+                <div class="card hidden">
+                    <img src="./Images/Rectangle 6 (5).png" alt="" class="cardImg">
+                    <p class="cardTitle">Atlas Weekend</p>
+                    <p class="cardMiniTitle">2021-06-09</p>
+                    <div class="iconWithCardText">
+                        <img src="./Icons/Vector (1).png" alt="" class="cardIcon">
+                        <p class="cardText">VDNH</p>
+                    </div>
+                </div>
+                <div class="card hidden">
+                    <img src="./Images/Rectangle 6 (4).png" alt="" class="cardImg">
+                    <p class="cardTitle">MONATIK</p>
+                    <p class="cardMiniTitle">2021-07-17</p>
+                    <div class="iconWithCardText">
+                        <img src="./Icons/Vector (1).png" alt="" class="cardIcon">
+                        <p class="cardText">VDNH</p>
+                    </div>
+                </div>
+                <div class="card hidden">
+                    <img src="./Images/Rectangle 6 (1).png" alt="" class="cardImg">
+                    <p class="cardTitle">Фінал Євробачення 2021!</p>
+                    <p class="cardMiniTitle">2021-05-13</p>
+                    <div class="iconWithCardText">
+                        <img src="./Icons/Vector (1).png" alt="" class="cardIcon">
+                        <p class="cardText">Палац Україна</p>
+                    </div>
+                </div>
+                <!-- <button class="loadMoreButton">Завантажити ще</button> -->
+            </div>
+        </section>
+        <section class="thirdSection">
+            <div class="thirdSectionNumbers">
+                <p class="thirdSectionInfo backBtn" data-page="1">1</p>
+                <p class="thirdSectionInfo" data-page="2">2</p>
+                <p class="thirdSectionInfo" data-page="3">3</p>
+                <p class="thirdSectionInfo" data-page="4">4</p>
+                <p class="thirdSectionInfo" data-page="5">5</p>
+                <p class="thirdSectionInfo" data-page="6">...</p>
+                <p class="thirdSectionInfo" data-page="7">29</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="lastSection">
+        <img src="./Icons/© 2021 _ All Rights Reserved _ Developed with ♥ by GoIT Students.png" alt="" class="footerText">
+    </footer>
+
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times; </span>
+      </div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
